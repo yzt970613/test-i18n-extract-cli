@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+
+// kt标准 css 变量定义
+@import '@ktaro/themes/dist/standard/variables.scss';
+// kt标准 css 样式
+@import '@ktaro/themes/dist/standard/theme.scss';
+
+page {
+  height: 100vh;
+}
+html,
+body {
+  height: 100%;
+}
+
+page,
+html {
+  font-size: 32px;
+}
+
+// safari 浏览器避免使用 100vh
+.taro_router {
+  min-height: unset !important;
+}

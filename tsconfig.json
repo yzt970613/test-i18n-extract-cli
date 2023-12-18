@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "preserve",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "./src",
+    "./types",
+    "components.d.ts",
+    "global.d.ts",
+    // 包含 @ktaro/components，目前 @ktaro/components 没有进行构建打包生成产物.d.ts，不能被 component.d.s 识别，这里手动 include
+    "node_modules/@ktaro/components"
+  ],
+  "compileOnSave": false
+}
