@@ -15,7 +15,7 @@ const fruit = `请问你喜欢的水果是:${codition.value ? '苹果' : '梨'}`
 
 <template>
   <view :id="`张三`"></view>
-  <view>{{ '李四' }}</view>
+  <view>{{ '李四44' }}</view>
   <view>{{ '我叫' }}{{ foo }}</view>
   <view>
     {{ `请问你喜欢的水果是:${codition ? '苹果' : '梨'}` }}
